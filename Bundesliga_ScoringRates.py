@@ -1,5 +1,36 @@
 
 
+<h2>Table of Contents</h2>
+<div class="alert alert-block alert-info" style="margin-thttps://op/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_https://co/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01ntent=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01: 20px">
+    <ul>
+        <li>
+            <a href="#dataset">About the Dataset</a>
+        </li>
+        <li>
+            <a href="#list">Lists</a>
+            <ul>
+                <li><a href="#index">Indexing</a></li>
+                <li><a href="#content">List Content</a></li>
+                <li><a href="#op">List Operations</a></li>
+                <li><a href="#co">Copy and Clone List</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#quiz">Quiz on Lists</a>
+        </li>
+        <li> 
+            <a href="#Scenario">Scenario:Shopping List </a></li>
+    </ul>
+
+</div>
+
+<hr>
+
+
+
+
+
+
 ## Code to create new insights into football stats of the Bundesliga.
 import pandas as pd
 import numpy as np
@@ -23,6 +54,9 @@ data.head()
 # filter Bundesliga
 BL_data = data[data.Comp.isin(["Bundesliga"])]
 
+# sort the data
+general_info = ["Player", "Nation", "Pos", "Squad", "Age", "Born"]
+playing_time = ["MP", "Starts", "Min"]
 
 # Before we begin with the analyse, let's get a better understanding of the data first
 # Explain the acronyms:
@@ -157,7 +191,7 @@ acronyms = {"Rk": "Rank", "Player": "Player's name", "Nation": "Player's nation"
 
 
 # Separate dependent variable and independent variables
-y = data['dependent_variable_column']  # replace 'dependent_variable_column' with the actual column name of your dependent variable
+y = data['Goals']  # replace 'dependent_variable_column' with the actual column name of your dependent variable
 X = data.drop(['dependent_variable_column'], axis=1)  # assuming other columns are independent variables
 
 # Standardize the data
